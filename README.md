@@ -6,6 +6,6 @@ https://selamatnatal.yovi.me/
 
 Merry Christmas! :)
 
-Credits
-Original version by [podrivo](https://github.com/podrivo/christmas)
-Snowstorm: A JavaScript Snow Effect for HTML by [scottschiller](https://github.com/scottschiller/snowstorm/)
+####Credits
+* Original version by [podrivo](https://github.com/podrivo/christmas)
+* Snowstorm: A JavaScript Snow Effect for HTML by [scottschiller](https://github.com/scottschiller/snowstorm/)
