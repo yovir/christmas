@@ -1,7 +1,7 @@
-Bring me a Tree
+Rockin around.
 =========
 
-A CSS3 animation I did for Christmas Experiment 2nd edition.
-http://christmasexperiments.com/2013/11/
+Made my own variation of chirstmas landing page.
+https://selamatnatal.yovi.me/
 
-Merry Christmas (:
+Merry Christmas! :)
