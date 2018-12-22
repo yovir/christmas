@@ -4,7 +4,7 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
 *{box-sizing:border-box;backface-visibility:hidden;animation-fill-mode:both;}
-html, body {height:100%; overflow:hidden; text-rendering:optimizeLegibility; font-smoothing:antialiased !important; text-shadow:1px 1px 1px rgba(0,0,0,0.004);}
+html, body {height:100%; overflow:hidden; margin:0; text-rendering:optimizeLegibility; font-smoothing:antialiased !important; text-shadow:1px 1px 1px rgba(0,0,0,0.004);}
 
 
 /* HTML */
@@ -13,11 +13,19 @@ html, body {height:100%; overflow:hidden; text-rendering:optimizeLegibility; fon
 .header .mask, .header .world {animation:none;}
 
 /* Text */
-.header h1, .article h2, .article h3 {z-index:999999; text-align:center; width:100%; position:absolute; top:50%; font-family:'Josefin Slab'; font-size:100px; color:#e41e3f; text-transform:uppercase;}
+.header h1, .article h2, .article h3 {z-index:999999; text-align:center; width:100%; position:absolute; top:50%; font-family:'Lobster'; font-size:100px; color:#e41e3f; text-transform:uppercase;}
 .header h1 {margin-top:-200px;}
 .article h2, .article h3 {animation:show 1s backwards;}
-.article h2 {margin-top:-230px; animation-delay:11s;}
+.article h2 {margin-top:-250px; animation-delay:11s;}
 .article h3 {margin-top:130px; animation-delay:11.3s;}
+
+@media (max-width: 620px) {
+	.header h1, .article h2, .article h3 {z-index:999999; text-align:center; width:100%; position:absolute; top:50%; font-family:'Lobster'; font-size:55px; color:#e41e3f; text-transform:uppercase;}
+	.header h1 {margin-top:-200px;}
+	.article h2, .article h3 {animation:show 1s backwards;}
+	.article h2 {margin-top:-260px; animation-delay:11s;}
+	.article h3 {margin-top:160px; animation-delay:11.3s;}
+}
 
 @keyframes show {from{opacity:0;}}
 
@@ -110,7 +118,7 @@ html, body {height:100%; overflow:hidden; text-rendering:optimizeLegibility; fon
 
 
 /* Lights */
-.light li {position:absolute; z-index:100; border-radius:10px; animation:lights .6s backwards;}
+.light li {position:absolute; z-index:100; border-radius:10px; animation:lights .6s backwards; animation-iteration-count:infinite;}
 .light.green li {background:#1cedbf; width:6px; height:6px;}
 .light.green li:nth-child(1) {top:528px; left:-177px; animation-delay:7.4s;}
 .light.green li:nth-child(2) {top:499px; left:-177px; animation-delay:7.5s;}
